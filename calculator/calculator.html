@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            content="A website showcasing Junhui Huang's Online Resume"
+            name="description"
+    />
+    <link href="../styles.css" rel="stylesheet" type="text/css"/>
+    <title>Projects | Resume</title>
+</head>
+<body>
+<div id="page-wrapper">
+    <header>
+        <h1>Junhui Huang</h1>
+        <p>My Online Resume</p>
+    </header>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../education/education.html">Education</a></li>
+                <li><a href="../experiences/experiences.html">Experience</a></li>
+                <li><a href="../projects/projects.html">Projects</a></li>
+                <li><a href="../skills/skills.html">Skills</a></li>
+                <li><a href="../contacts/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3 id="main-title">Projects</h3>
+            <div id="main-block">
+                <div class="block">
+                    <h2>
+                        <a href="https://www.bucssa.org/"
+                        >BUCSSA Application portal & Official website</a
+                        >
+                    </h2>
+                    <ul>
+                        <li>
+                            As a vice president of the BUCSSA Technology Department, developed and
+                            maintained a website with features including freshman orientation,
+                            event registration, accounting and sponsorship management, and
+                            real-time high-concurrency voting.
+                        </li>
+                        <li>
+                            The main development was done using Flask and React, with SASS as
+                            the CSS preprocessor. The high-concurrency components were
+                            developed using Rust and the Tokio multi-threading framework,
+                            while AWS MySQL was used for the database.
+                        </li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <h2>Interactive circuit playground</h2>
+                    <ul>
+                        <li>
+                            Inspired by an open-source project called CircuitJS, implemented
+                            in 3D game engine to make it less abstract for secondary school
+                            students.
+                        </li>
+                        <li>
+                            Created using Unreal Engine 4, the model was crafted with SketchUP
+                            and Blender, with materials designed using Substance 3D.
+                        </li>
+                    </ul>
+                </div>
+                <div class="block" id="calculator">
+                    <h2>Simple Calculator</h2>
+                    <label>First Number: <input type="number" id="first-number" /></label>
+                    <br />
+                    <label>Second Number: <input type="number" id="second-number" /></label>
+                    <br />
+                    <button onclick="addition()">Add</button>
+                    <button onclick="subtraction()">Subtract</button>
+                    <button onclick="multiplication()">Multiply</button>
+                    <button onclick="division()">Divide</button>
+                    <button onclick="power()">Power</button>
+                    <button onclick="clearAll()">Clear</button>
+                    <br />
+                    <h3>Result: <span id="output"></span></h3>
+                </div>
+            </div>
+        </main>
+    </div>
+<footer>
+    All Rights Reserved by Junhui Huang &nbsp;<a
+ href="../credits/credits.html">Credits</a
+>
+    &nbsp;&copy;
+</footer>
+</div>
+<script src="projects.js"></script>
+</body>
+</html>
